@@ -1,7 +1,0 @@
-.process {
-    @extend %section-title;
-}
-
-.discover {
-    @include grid-columns(1fr 1fr, 24px);
-}
