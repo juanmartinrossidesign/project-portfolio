@@ -1,0 +1,70 @@
+header {
+    text-align: center;
+    padding: 24px 0;
+    border-bottom: 1px solid $color-border;
+    background-color: $color-bg-light;
+}
+
+header,
+main,
+footer {
+    padding: $spacing-md;
+}
+
+main,
+footer {
+    @include section-width;
+}
+
+.navbar {
+    .nav-link {
+        color: $color-text;
+        border-radius: $radius-sm;
+        padding: 10px 18px;
+        @include transition-default;
+
+        &:hover {
+            background: $color-primary;
+            color: $color-white;
+        }
+
+        &.active {
+            background: $color-primary-dark;
+            color: $color-white;
+            font-weight: 600;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    .navbar-brand {
+        color: $color-text;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 12px 0 0;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+    .about-intro,
+    .skills-tools,
+    .discover {
+        grid-template-columns: 1fr;
+        gap: $spacing-lg;
+    }
+
+    .want-to-work,
+    .send {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

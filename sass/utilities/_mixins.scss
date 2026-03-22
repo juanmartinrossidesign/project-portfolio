@@ -1,0 +1,21 @@
+@mixin flex-center($justify: center, $align: center, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid-columns($columns, $gap: 24px) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+@mixin section-width {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@mixin transition-default {
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}

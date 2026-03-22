@@ -1,0 +1,42 @@
+.hero {
+    @include grid-columns(1fr, 24px);
+    align-items: center;
+}
+
+.hero-media {
+    img {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+.projects {
+    display: block;
+
+    h2 {
+        margin-bottom: $spacing-lg;
+    }
+}
+
+.projects-grid {
+    @include grid-columns(1fr, 24px);
+    align-items: start;
+}
+
+.project-card {
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: $radius-sm;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero,
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

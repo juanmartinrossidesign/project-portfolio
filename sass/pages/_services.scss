@@ -1,0 +1,7 @@
+.services {
+    @extend %section-title;
+}
+
+.send {
+    @include flex-center(flex-start, center, 12px);
+}
