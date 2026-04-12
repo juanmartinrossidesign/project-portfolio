@@ -12,6 +12,10 @@ img {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -116,18 +120,11 @@ footer {
   line-height: 1.65;
   overflow-x: hidden;
 }
-.homepage .nav-links .nav-link {
-  background: transparent !important;
-  border-radius: 12px;
-}
-.homepage .nav-links .nav-link:hover, .homepage .nav-links .nav-link:focus, .homepage .nav-links .nav-link:active {
-  background: rgba(184, 240, 86, 0.12) !important;
-  color: #b8f056 !important;
-}
 .homepage .navbar-nav .nav-link.active,
 .homepage .navbar-nav .nav-link.show {
   background: rgba(184, 240, 86, 0.12) !important;
   color: #b8f056 !important;
+  border-radius: 12px;
 }
 .homepage::after {
   content: "";
@@ -227,18 +224,21 @@ footer {
 }
 .homepage .nav-links {
   display: flex;
-  gap: 32px;
+  gap: 20px;
   list-style: none;
 }
 .homepage .nav-links .nav-link {
+  display: inline-block;
   color: rgba(237, 234, 228, 0.48) !important;
   text-decoration: none;
   font-size: 0.875rem;
-  transition: color 0.2s;
-  padding: 0;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: background 0.2s, color 0.2s;
 }
-.homepage .nav-links .nav-link:hover {
-  color: #edeae4 !important;
+.homepage .nav-links .nav-link:hover, .homepage .nav-links .nav-link:focus, .homepage .nav-links .nav-link:active {
+  background: rgba(184, 240, 86, 0.12) !important;
+  color: #b8f056 !important;
 }
 .homepage .nav-cta {
   background: #b8f056;
@@ -246,7 +246,7 @@ footer {
   font-family: "Figtree", sans-serif;
   font-weight: 600;
   font-size: 0.83rem;
-  padding: 9px 22px;
+  padding: 12px 26px;
   border-radius: 100px;
   text-decoration: none;
   transition: opacity 0.2s, transform 0.15s;
@@ -255,6 +255,13 @@ footer {
   opacity: 0.84;
   transform: translateY(-1px);
   color: #09090e;
+}
+.homepage #contact {
+  padding: 110px 0;
+  scroll-margin-top: 0px;
+}
+.homepage #about {
+  scroll-margin-top: 30px;
 }
 .homepage #hero {
   min-height: 100vh;
@@ -791,9 +798,6 @@ footer {
   padding: 5px 13px;
   border-radius: 100px;
   white-space: nowrap;
-}
-.homepage #cta {
-  padding: 110px 0;
 }
 .homepage .cta-box {
   position: relative;

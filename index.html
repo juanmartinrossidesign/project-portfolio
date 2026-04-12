@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juan Martín Rossi · UX/UI Designer</title>
+  <title>Juan Martín Rossi | UX/UI Designer</title>
+  <meta name="description" content="Portfolio of Juan Martín Rossi, a UX/UI designer focused on clear, functional, and user-centered digital experiences." />
+  <meta name="author" content="Juan Martín Rossi" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Juan Martín Rossi | UX/UI Designer" />
+  <meta property="og:description" content="Portfolio of Juan Martín Rossi, a UX/UI designer focused on clear, functional, and user-centered digital experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/hero-placeholder.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,700;0,900;1,300;1,600;1,700;1,900&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- AOS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -26,7 +34,7 @@
   <!-- NAV -->
   <nav id="nav" class="navbar navbar-expand-lg">
     <div class="container-fluid px-4 px-lg-5">
-      <a class="nav-logo navbar-brand" href="#">Juan<em>.</em></a>
+      <a class="nav-logo navbar-brand" href="#hero">Juan Martín Rossi<em>.</em></a>
 
       <button
         class="navbar-toggler"
@@ -48,11 +56,11 @@
           <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
         </ul>
 
-        <a class="nav-cta d-none d-lg-inline-flex" href="mailto:juanmartinrossi.design@gmail.com">Contact →</a>
+        <a class="nav-cta d-none d-lg-inline-flex" href="#contact" aria-label="Go to contact section">Contact →</a>
       </div>
     </div>
   </nav>
-
+<main>
   <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
@@ -68,7 +76,7 @@
 
       <div class="hero-visual">
         <div class="hero-img-wrap">
-          <img src="img/hero-placeholder.png" alt="UX/UI project preview">
+          <img src="img/hero-placeholder.png" alt="Preview of a UX/UI mobile app project" />
         </div>
         <div class="hero-pill">
           <strong>2</strong>
@@ -149,7 +157,7 @@
       <div class="projects-grid">
         <div class="project-card" data-aos="fade-up" data-aos-delay="80">
           <div class="project-img-wrap">
-            <img src="img/project-tazy.png" alt="Tazy app project preview">
+            <img src="img/project-tazy.png" alt="Preview of the Tazy mobile app UX/UI project" />
             <span class="project-chip">App · Figma</span>
           </div>
           <div class="project-body">
@@ -157,14 +165,14 @@
             <p>UX/UI design for a local shopping app. I worked on user research, information architecture, user flows, and a high-fidelity prototype. The main focus was reducing friction across the experience.</p>
             <a href="https://www.behance.net/gallery/236428765/Tazy-Local-Shopping-Made-Simple" target="_blank" rel="noopener noreferrer" class="project-link">
               View case study
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
           </div>
         </div>
 
         <div class="project-card" data-aos="fade-up" data-aos-delay="180">
           <div class="project-img-wrap">
-            <img src="img/project-trenes.png" alt="Trenes Argentinos redesign preview">
+            <img src="img/project-trenes.png" alt="Preview of the Trenes Argentinos website redesign" />
             <span class="project-chip">Web · Redesign</span>
           </div>
           <div class="project-body">
@@ -172,7 +180,7 @@
             <p>A redesign proposal for the Trenes Argentinos digital experience. I focused on accessibility, simplifying key tasks, and improving visual consistency throughout the flow.</p>
             <a href="https://www.behance.net/juanmartinrossi" target="_blank" rel="noopener noreferrer" class="project-link">
               Case study coming soon
-              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
           </div>
         </div>
@@ -310,8 +318,8 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta">
+  <!-- CONTACT -->
+  <section id="contact">
     <div class="container">
       <div class="cta-box" data-aos="zoom-in" data-aos-duration="600">
         <p class="sh-label cta-label">Let’s work together</p>
@@ -320,23 +328,25 @@
         <a href="mailto:juanmartinrossi.design@gmail.com" class="btn-primary">Get in touch →</a>
 
         <div class="cta-socials">
-  <a href="https://www.linkedin.com/in/jmartinrossi/" target="_blank" rel="noopener noreferrer" class="cta-social">
-    LinkedIn
-  </a>
-  <span class="cta-sep">·</span>
-  <a href="https://www.behance.net/juanmartinrossi" target="_blank" rel="noopener noreferrer" class="cta-social">
-    Behance
-  </a>
-  <span class="cta-sep">·</span>
-  <a href="mailto:juanmartinrossi.design@gmail.com" class="cta-social">
-    juanmartinrossi.design@gmail.com
-  </a>
-</div>
+          <a href="https://www.linkedin.com/in/jmartinrossi/" target="_blank" rel="noopener noreferrer" class="cta-social">
+            LinkedIn
+          </a>
+          <span class="cta-sep">·</span>
+          <a href="https://www.behance.net/juanmartinrossi" target="_blank" rel="noopener noreferrer" class="cta-social">
+            Behance
+          </a>
+          <span class="cta-sep">·</span>
+          <a href="mailto:juanmartinrossi.design@gmail.com" class="cta-social">
+            juanmartinrossi.design@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
-
+</main>
   <!-- FOOTER -->
   <footer>
-    <a class="f-logo" href="#">Juan Martín Rossi<em>.</em></a>
+    <a class="f-logo" href="#hero">Juan Martín Rossi<em>.</em></a>
     <ul class="f-links">
       <li><a href="#projects">Projects</a></li>
       <li><a href="#services">Services</a></li>
@@ -347,7 +357,7 @@
   </footer>
 
   <!-- Bootstrap -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- AOS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

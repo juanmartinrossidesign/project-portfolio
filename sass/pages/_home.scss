@@ -6,25 +6,12 @@
     line-height: 1.65;
     overflow-x: hidden;
 
-    .nav-links {
-    .nav-link {
-        background: transparent !important;
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        background: rgba(184, 240, 86, 0.12) !important;
+        color: #b8f056 !important;
         border-radius: 12px;
-
-        &:hover,
-        &:focus,
-        &:active {
-            background: rgba(184, 240, 86, 0.12) !important;
-            color: #b8f056 !important;
-        }
     }
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    background: rgba(184, 240, 86, 0.12) !important;
-    color: #b8f056 !important;
-}
 
     &::after {
         content: '';
@@ -139,18 +126,23 @@
 
     .nav-links {
         display: flex;
-        gap: 32px;
+        gap: 20px;
         list-style: none;
 
         .nav-link {
+            display: inline-block;
             color: rgba(237, 234, 228, 0.48) !important;
             text-decoration: none;
             font-size: 0.875rem;
-            transition: color 0.2s;
-            padding: 0;
+            padding: 10px 16px;
+            border-radius: 12px;
+            transition: background 0.2s, color 0.2s;
 
-            &:hover {
-                color: #edeae4 !important;
+            &:hover,
+            &:focus,
+            &:active {
+                background: rgba(184, 240, 86, 0.12) !important;
+                color: #b8f056 !important;
             }
         }
     }
@@ -161,7 +153,7 @@
         font-family: 'Figtree', sans-serif;
         font-weight: 600;
         font-size: 0.83rem;
-        padding: 9px 22px;
+        padding: 12px 26px;
         border-radius: 100px;
         text-decoration: none;
         transition: opacity 0.2s, transform 0.15s;
@@ -172,6 +164,15 @@
             color: #09090e;
         }
     }
+
+    #contact {
+        padding: 110px 0;
+        scroll-margin-top: 0px;
+    }
+
+    #about {
+    scroll-margin-top: 30px;
+}
 
     #hero {
         min-height: 100vh;
@@ -792,10 +793,6 @@
         white-space: nowrap;
     }
 
-    #cta {
-        padding: 110px 0;
-    }
-
     .cta-box {
         position: relative;
         overflow: hidden;
@@ -842,18 +839,18 @@
     }
 
     .cta-social {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: rgba(237, 234, 228, 0.7);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: color 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: rgba(237, 234, 228, 0.7);
+        text-decoration: none;
+        font-size: 0.875rem;
+        transition: color 0.2s;
 
-    &:hover {
-        color: #b8f056;
+        &:hover {
+            color: #b8f056;
+        }
     }
-}    
 
     .cta-sep {
         color: rgba(237, 234, 228, 0.18);
