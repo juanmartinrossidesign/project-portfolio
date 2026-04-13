@@ -1,28 +1,40 @@
 # UX/UI Portfolio (HTML & CSS)
 
-Personal portfolio website built with **semantic HTML** and **CSS**, created as part of my web development coursework.  
-It showcases my UX/UI work, selected projects, and contact information.
+Personal portfolio website built with **semantic HTML** and **CSS** as part of my web development coursework.  
+It showcases my UX/UI work, selected case studies, and contact information.
 
 ## Live site
-- https://juanmartinrossidesign.github.io/proyect-portfolio/
+- https://juanmartinrossi.infinityfreeapp.com/
 
-## Pages / Structure
-- `index.html` — Home
-- `/pages/` — Additional sections (About, Services, Process, Contact)
-- `/css/` — Styles
-- `/img/` — Images and assets
+## Repository
+- https://github.com/juanmartinrossidesign/proyect-portfolio
+
+## Structure
+- `index.html` — Main landing page
+- `/css/` — Compiled styles
+- `/sass/` — Source Sass files
+- `/img/` — Images and visual assets
 
 ## Built with
-- HTML5 (semantic structure)
-- CSS3 (responsive layout, reusable styles)
+- HTML5
+- CSS3
+- Sass
+- Bootstrap 5
+
+## Features
+- Responsive layout
+- Mobile navigation
+- Project showcase section
+- Contact section
+- External links to LinkedIn and Behance
 
 ## How to run locally
-Just open `index.html` in your browser, or use a local server (recommended for testing links and assets).
+Open `index.html` in your browser, or run the project with a local server for a better development experience.
 
 ## Author
 **Juan Martín Rossi**  
-- LinkedIn: https://www.linkedin.com/in/jmartinrossi/
-- Behance / Portfolio: https://www.behance.net/juanmartinrossi
+- LinkedIn: https://www.linkedin.com/in/jmartinrossi/  
+- Behance: https://www.behance.net/juanmartinrossi
 
 ## License
-This project is for personal/educational use. All rights reserved.
+This project was created for personal and educational purposes. All rights reserved.
