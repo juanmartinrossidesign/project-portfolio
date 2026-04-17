@@ -37,4 +37,6 @@ Open `index.html` in your browser, or run the project with a local server for a 
 - Behance: https://www.behance.net/juanmartinrossi
 
 ## License
+
 This project was created for personal and educational purposes. All rights reserved.
+
