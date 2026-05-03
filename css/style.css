@@ -865,7 +865,8 @@ footer {
     grid-template-columns: 1fr;
   }
   .homepage .hero-visual {
-    display: none;
+    height: 380px;
+    margin-top: 32px;
   }
   .homepage .projects-grid {
     grid-template-columns: 1fr;
